@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap');
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 100%;
+    /* Adjust as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    color: white
+}
+
+.overlay p,
+.overlay button {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-family: 'Source Sans 3', sans-serif !important;
+    /* Clip the animated overflow */
+}
+
+.image-container img {
+    width: 100%;
+    /* Adjust as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+    /* Add transition for smooth animation */
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+    /* Apply scaling transformation on hover */
+}

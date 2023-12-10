@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap');
+
+.hero{
+    /* background-image: url('../../Images/Background.png'); */
+    background-color: #b3e8ff;
+    height: 100vh;
+
+    background-size:cover;
+    background-position: center;
+    color: white;
+    font-family: 'Source Sans 3', sans-serif !important;
+
+}
+.herohead{
+    text-transform: uppercase;
+}
+.herotext{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.herobtn{
+    background-color: #4b5b9d;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.herobtn:hover{
+    background-color: #29335c;
+    opacity: 0.8;
+    color:white;
+    transform: translateY(-2px);
+}
+
+.greytext{
+    background-color: #29335c;
+    color: white;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans 3',
+        sans-serif !important;
+    
+}
+
+
+.cp-bg{
+    background-image:url('../../Images/cp-bg.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:90vh;
+    font-family: 'Source Sans 3', sans-serif !important;
+}
+
+.cp-desc{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 85vh;
+}
+
+.cp-desc1{
+    display: none;
+}
+
+@media screen and (max-width: 771px) {
+    .cp-desc{
+        display: none !important;
+    }
+
+    .cp-desc1{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        height: 100%;
+        color: white;
+        font-weight: bolder;
+    }
+}
+
+.desc-bg{
+    background-color: #b3e8ff;
+}
+
+.footer-bg{
+    background-color: rgb(255, 255, 255);
+    /* margin-top: 20px; */
+    color: black;
+    font-family: 'Source Sans 3', sans-serif !important;
+}
+
+.submitbutton {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+}
